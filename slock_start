@@ -1,0 +1,2 @@
+#!/bin/bash
+slock -m "$(cowsay -f sodomized -e "^^" -T "U" "Oh, yes, Herbert!")"

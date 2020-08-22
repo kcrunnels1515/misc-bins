@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+function run {
+  if ! pgrep $1 ;
+  then
+    $@&
+  fi
+}
+$HOME/.config/polybar/launch.sh &
+panel &
+run sxhkd -c $HOME/.config/tinywm/sxhkd/background_shell/sxhkdrc &
+numlockx on &
